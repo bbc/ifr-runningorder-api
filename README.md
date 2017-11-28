@@ -25,7 +25,7 @@ We're using [mocha](https://mochajs.org/), [chai](http://chaijs.com/) and [sinon
 
 ### REST API
 #### Get all events
-```GET /test```
+```GET /ro/{pid}```
 ##### Parameters
 None
 ##### Response

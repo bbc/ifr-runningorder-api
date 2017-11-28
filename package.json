@@ -1,7 +1,7 @@
 {
-  "name": "ifr-microservice-mor",
+  "name": "ifr-runningorder-api",
   "version": "0.0.1",
-  "description": "Interface to Broadcast Bionics MOR",
+  "description": "An API to expose a studio running order",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbc/ifr-microservice-mor.git"
+    "url": "git+https://github.com/bbc/ifr-runningorder-api.git"
   },
-  "author": "Chris Roberts",
+  "author": "Rachel Wilson",
   "license": "ISC",
   "dependencies": {
     "ifr-microservice": "git+ssh://git@github.com/bbc/ifr-microservice.git",
