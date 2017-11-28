@@ -24,14 +24,7 @@ The logger uses the module name (from package.json) and version.
 We're using [mocha](https://mochajs.org/), [chai](http://chaijs.com/) and [sinon](http://sinonjs.org/) to perform unit testing. All tests should run by running `npm test`.
 
 ### REST API
-#### Get all events
+#### Get a running order for a single pid
 ```GET /ro/{pid}```
 ##### Parameters
 None
-##### Response
-```
-Status: 200
-ContentType: application/json
- 
-Paste Response here
-```

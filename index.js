@@ -4,15 +4,17 @@ var moment = require('moment')
 var request = require('request')
 var restify = require('restify')
 var MicroService = require('ifr-microservice')
+
 var RunningOrderApiMicroService = function (service_name, service_version, options) {
+    console.log("RLW newbity")
     this.service = new MicroService(service_name, service_version, options);
 }
 
 RunningOrderApiMicroService.prototype.setup = function () {
+    console.log("RLW setup")
     var self = this
 
     // GET a running order by pid
-    console.log('RLW dirname is '+ __dirname);
     this.service.server.get('/ro/b09drjf8', restify.plugins.serveStatic({
             appendRequestPath: false,
             directory: './public/json',
@@ -23,6 +25,7 @@ RunningOrderApiMicroService.prototype.setup = function () {
 }
 
 RunningOrderApiMicroService.prototype.run = function () {
+    console.log("RLW a")
     var self = this
     this.service.start(function (err) {
         if (err) {
@@ -40,6 +43,7 @@ RunningOrderApiMicroService.prototype.stop = function () {
 
 if (require.main === module) {
     // start a barebones service for testing purposes
+    console.log("RLW arf")
     var ms = new RunningOrderApiMicroService('runningorder-api', '0.0.1');
     ms.setup()
     process.on('SIGINT', function () {
