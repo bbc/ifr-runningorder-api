@@ -1,0 +1,28 @@
+{
+  "name": "ifr-microservice-mor",
+  "version": "0.0.1",
+  "description": "Interface to Broadcast Bionics MOR",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "start": "node index.js | bunyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbc/ifr-microservice-mor.git"
+  },
+  "author": "Chris Roberts",
+  "license": "ISC",
+  "dependencies": {
+    "ifr-microservice": "git+ssh://git@github.com/bbc/ifr-microservice.git",
+    "moment": "^2.17.1",
+    "pkginfo": "^0.4.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "nconf": "^0.8.4",
+    "request": "^2.78.0"
+  }
+}

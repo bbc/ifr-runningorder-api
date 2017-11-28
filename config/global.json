@@ -1,0 +1,13 @@
+{
+   "http" : {
+      "port": 4322
+   },
+   "stomp": {
+      "host": "ifr-linux-appl",
+      "user": "guest",
+      "password": "password"
+   },
+   "mor": {
+      "nowPlaying": "http://10.10.10.122:18500/api/Playout/PostNowPlaying"
+   }
+}
