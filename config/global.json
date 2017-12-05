@@ -1,5 +1,8 @@
 {
-   "http" : {
+   "http": {
       "port": 4323
+   },
+   "db": {
+      "uri": "mongodb://rotool:rotool@127.0.0.1:27017/rotool"
    }
 }

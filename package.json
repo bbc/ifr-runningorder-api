@@ -17,7 +17,10 @@
     "ifr-microservice": "git+ssh://git@github.com/bbc/ifr-microservice.git",
     "moment": "^2.17.1",
     "pkginfo": "^0.4.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "mongoose": "4.13.6",
+    "mongoose-string-query": "0.2.5",
+    "mongoose-timestamp": "0.6.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

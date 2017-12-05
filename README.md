@@ -7,6 +7,13 @@ This service should run on its own, and pass all unit tests. Run it by executing
 
     npm start
 
+### Database
+The running order is stored in a mongoDB database.  We are using the [bitnami docker image](https://github.com/bitnami/bitnami-docker-mongodb)
+
+After getting the image, start it with the following command
+
+    docker run -d -e MONGODB_DATABASE=rotool -e MONGODB_USERNAME=rotool -e MONGODB_PASSWORD=rotool -e MONGODB_ROOT_PASSWORD=admin123 --name ifr_mongo -p 27017:27017 bitnami/mongodb:latest
+
 ### Data model
 The underlying data model is based on R&D's proposed [Object Based Media Schema](https://github.com/bbc/object-based-media-schema)
 

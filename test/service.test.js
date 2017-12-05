@@ -17,9 +17,7 @@ svc.setup()
 describe(module.exports.name, function () {
 
     before(function () {
-        console.log("RLW 1")
         svc.run()
-        console.log("RLW 2")
     })
 
     after(function () {
@@ -37,8 +35,8 @@ describe(module.exports.name, function () {
         })
     })
 
-    it("responds to /ro/b09drjf8", function (done) {
-        request.get('http://localhost:' + httpPort + '/ro/b09drjf8', function (err, res, body) {
+    it("responds to static/ro/b09drjf8", function (done) {
+        request.get('http://localhost:' + httpPort + '/static/ro/b09drjf8', function (err, res, body) {
             res.statusCode.should.equal(200);
             // grr the mime lookup used by restify inside its serveStatic module is broken, and you cant explicitly
             // specify the Content-Type for static restify resources.  So while we're serving static files we'll just
